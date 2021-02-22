@@ -3,7 +3,7 @@ class BandModel {
   String _name;
   int _votes;
 
-  BandModel({final String id, final String name, final int votes})
+  BandModel({final String id, final String name, final int votes = 0})
       : this._id = id,
         assert(id != null),
         this._name = name,
