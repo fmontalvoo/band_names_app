@@ -10,7 +10,6 @@ class BandModel {
         assert(name != null),
         this._votes = votes,
         assert(votes >= 0) {
-    print('$id, $name, $votes');
   }
 
   factory BandModel.fromJson(Map<String, dynamic> json) => BandModel(
