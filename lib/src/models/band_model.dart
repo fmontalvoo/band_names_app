@@ -9,8 +9,7 @@ class BandModel {
         this._name = name,
         assert(name != null),
         this._votes = votes,
-        assert(votes >= 0) {
-  }
+        assert(votes >= 0);
 
   factory BandModel.fromJson(Map<String, dynamic> json) => BandModel(
       id: json["id"] ?? "",
